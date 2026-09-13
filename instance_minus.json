@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "instance_id": "matched_pc_witness",
+  "world": {
+    "hypotheses": [
+      {
+        "id": "w_target_absent",
+        "target_label": "absent"
+      },
+      {
+        "id": "w_target_present",
+        "target_label": "present"
+      }
+    ],
+    "target_function": "target_label"
+  },
+  "initial_state": {
+    "certificate": {
+      "target": "target_feature"
+    },
+    "representation": "R0",
+    "controller": {
+      "id": "M0",
+      "mode": "deterministic"
+    },
+    "authority": {
+      "id": "epistemic_authority_0",
+      "admission_rule": "valid_records_only"
+    },
+    "admitted_evidence": [
+      "e_star"
+    ],
+    "history": [
+      {
+        "id": "e_star",
+        "valid": true,
+        "admitted": true,
+        "target": "target_feature",
+        "target_label": "present",
+        "source": "initial_history"
+      }
+    ],
+    "cost": 0,
+    "rank": 0,
+    "depth": 0
+  },
+  "policy": {
+    "Pi": "retain_hypotheses_consistent_with_represented_admitted_evidence",
+    "Pi_eff": "all_declared_actions_have_nonnegative_integer_cost",
+    "Pi_epi": "use_only_valid_admitted_evidence",
+    "terminal_rule": "close_when_exactly_one_compatible_hypothesis_remains"
+  },
+  "evidence_actions": [
+    {
+      "id": "observe_alias_preserving_signal",
+      "kind": "evidence",
+      "legal_from": [
+        "R0",
+        "R1"
+      ],
+      "outcomes": [
+        {
+          "id": "e_aux",
+          "valid": true,
+          "admitted": true,
+          "target": "auxiliary_feature",
+          "value": "constant",
+          "source": "environment"
+        }
+      ],
+      "cost": 2
+    }
+  ],
+  "representation_actions": [
+    {
+      "id": "repair_R0_to_R1",
+      "kind": "representation",
+      "from": "R0",
+      "to": "R1",
+      "enabled": false,
+      "reads": "admitted_history_only",
+      "cost": 1
+    }
+  ],
+  "representations": {
+    "R0": {
+      "projection": "alias_target_distinction",
+      "exposes_fields": []
+    },
+    "R1": {
+      "projection": "expose_admitted_target_label",
+      "exposes_fields": [
+        "target_label"
+      ]
+    }
+  }
+}

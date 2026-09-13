@@ -1,0 +1,5 @@
+# Finite complementarity checker
+
+> ICLR reviewers: start with FOR_REVIEWERS.md.
+
+This repository contains a deterministic executable same-instance representation-freeze witness retained as theorem-adjacent implementation evidence. Historical protocol documents called it "Theorem 2, Part I"; that historical label must not be interpreted as current manuscript Theorem 2. Reproduce the witness from the repository root with the exact command `python checker.py`. That command writes a machine-readable result file reporting that full PC closes at cost 1 after one representation repair while the fixed-R evaluator on the same instance is exhaustively non-closing. The optimal full-PC path acquires no new environmental evidence because the target-bearing datum is already admitted before the intervention. A secondary transition-deletion ablation confirms that removing the representation transition also destroys closure, but that ablation is not the fixed-R computation. The artifact is an executable matched theorem witness, not statistical validation, prevalence evidence, or deployment evidence.

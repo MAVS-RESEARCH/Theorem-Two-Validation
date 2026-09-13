@@ -1,0 +1,43 @@
+{
+  "artifact": "theorem-2-validation-artifact",
+  "review_snapshot": "anonymous",
+  "files_scanned": 13,
+  "files_changed_for_anonymization": 2,
+  "reviewer_files_added": 4,
+  "sanitization_categories": [
+    "license_copyright_holder",
+    "author_repository_url",
+    "current_repository_commit_identifier"
+  ],
+  "identity_findings_removed": 3,
+  "path_findings_removed": 0,
+  "git_object_findings_removed": 1,
+  "secret_scan": "PASS",
+  "binary_archive_notebook_scan": "PASS",
+  "reproduction_command": "python checker.py",
+  "reproduction_verdict": "PASS",
+  "test_command": "python -m pytest -q",
+  "tests_passed": 55,
+  "tests_failed": 0,
+  "subtests_passed": 49,
+  "scientific_non_regression": "PASS",
+  "scientific_invariants": {
+    "artifact_kind": "executable_matched_theorem_witness",
+    "all_passed": true,
+    "causal_invariants_all_passed": true,
+    "full_pc_closed": true,
+    "full_pc_minimum_closure_cost": 1,
+    "full_pc_representation_repairs": 1,
+    "full_pc_evidence_acquisitions": 0,
+    "full_pc_steps": 1,
+    "fixed_r_closed": false,
+    "fixed_r_cost_classification": "infinity",
+    "fixed_r_frontier_exhausted": true,
+    "kappa_pi_I": 1,
+    "kappa_pi_fix_r_I_classification": "infinity",
+    "optimal_action": "repair_R0_to_R1",
+    "secondary_ablation_role": "transition_deletion_corroboration_only",
+    "secondary_ablation_diff": "representation_actions[0].enabled"
+  },
+  "notes": "Aggregate counts only. No original identities, URLs, emails, paths, or commit identifiers are included in this report."
+}

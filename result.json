@@ -1,0 +1,311 @@
+{
+  "acceptance": {
+    "all_passed": true,
+    "causal_invariants_all_passed": true,
+    "e_star_already_admitted_and_valid": true,
+    "fixed_r_closed": false,
+    "fixed_r_explored_state_count": 2,
+    "fixed_r_frontier_exhausted": true,
+    "fixed_r_reachable_state_count": 2,
+    "full_pc_closed": true,
+    "full_pc_cost_classification": "finite",
+    "full_pc_evidence_acquisitions": 0,
+    "full_pc_explored_state_count": 4,
+    "full_pc_frontier_exhausted": true,
+    "full_pc_reachable_state_count": 4,
+    "full_pc_representation_repairs": 1,
+    "full_pc_steps": 1,
+    "kappa_pi_I": 1,
+    "kappa_pi_I_equals_1": true,
+    "kappa_pi_fix_r_I": null,
+    "kappa_pi_fix_r_I_classification": "infinity",
+    "kappa_pi_fix_r_I_is_infinity": true,
+    "r0_aliases_relevant_distinction": true,
+    "r1_reads_admitted_history_only": true,
+    "same_canonical_instance_fingerprint": true,
+    "same_canonical_instance_object": true,
+    "secondary_ablation_exactly_one_difference": true,
+    "secondary_ablation_role": "transition_deletion_corroboration_only",
+    "secondary_ablation_structural_diff": [
+      "representation_actions[0].enabled"
+    ]
+  },
+  "artifact_kind": "executable_matched_theorem_witness",
+  "causal_invariants": {
+    "all_passed": true,
+    "authority": {
+      "canonical_and_ablation_authority_identical": true,
+      "canonical_authority_present": true
+    },
+    "controller": {
+      "canonical_and_ablation_controller_identical": true,
+      "canonical_controller_present": true
+    },
+    "costs": {
+      "canonical_and_ablation_costs_identical": true,
+      "evidence_action_cost_nonnegative": true,
+      "initial_cost_zero": true,
+      "representation_repair_cost_is_1": true
+    },
+    "evidence_actions_outcomes_and_costs": {
+      "all_action_costs_nonnegative": true,
+      "canonical_and_ablation_evidence_actions_identical": true,
+      "canonical_and_ablation_evidence_costs_identical": true,
+      "canonical_and_ablation_evidence_outcomes_identical": true,
+      "canonical_and_ablation_repair_cost_identical": true
+    },
+    "evidence_history": {
+      "canonical_and_ablation_admitted_evidence_identical": true,
+      "canonical_and_ablation_history_identical": true,
+      "e_star_admitted": true,
+      "e_star_in_admitted_evidence": true,
+      "e_star_in_initial_history": true,
+      "e_star_target_bearing": true,
+      "e_star_valid": true
+    },
+    "initial_representation": {
+      "canonical_and_ablation_initial_representation_identical": true,
+      "canonical_initial_representation_is_R0": true
+    },
+    "logged_before_search": true,
+    "policies": {
+      "Pi": true,
+      "Pi_eff": true,
+      "Pi_epi": true,
+      "canonical_and_ablation_policy_identical": true,
+      "terminal_rule": true
+    },
+    "representation_semantics": {
+      "ablation_repair_disabled": true,
+      "canonical_repair_enabled": true,
+      "e_star_already_admitted_and_valid": true,
+      "r0_aliases_relevant_distinction": true,
+      "r1_reads_admitted_history_only": true,
+      "representation_definitions_identical": true
+    },
+    "world_and_target_function": {
+      "canonical_and_ablation_hypotheses_identical": true,
+      "canonical_and_ablation_target_function_identical": true,
+      "canonical_world_has_distinct_target_labels": true
+    }
+  },
+  "claim_scope": {
+    "deployment_evidence": false,
+    "llm_evaluation": false,
+    "prevalence_evidence": false,
+    "statistical_validation": false
+  },
+  "inputs": {
+    "canonical_instance": "instance_plus.json",
+    "canonical_instance_sha256": "106c978c111bd348bf5fd561a0e7487b775a94e2c720f7ad9ddf593c4526d09a",
+    "secondary_ablation": "instance_minus.json",
+    "secondary_ablation_sha256": "57f868a299c9e79b90841fe814275c8e7128f10ef2d8e51de910302fdf791996"
+  },
+  "phase_one": {
+    "ablation_admitted_evidence_unchanged": true,
+    "ablation_history_unchanged": true,
+    "ablation_instance_valid": true,
+    "ablation_structural_diff": [
+      "representation_actions[0].enabled"
+    ],
+    "canonical_instance": "instance_plus.json",
+    "canonical_instance_sha256": "106c978c111bd348bf5fd561a0e7487b775a94e2c720f7ad9ddf593c4526d09a",
+    "canonical_instance_unchanged_by_policy_projection": true,
+    "canonical_instance_valid": true,
+    "canonical_round_trip_stable": true,
+    "canonical_transition_repair_enabled": true,
+    "e_star_pre_admitted": true,
+    "fixed_r_admissible_actions": [
+      "observe_alias_preserving_signal"
+    ],
+    "fixed_r_excluded_actions": [
+      "repair_R0_to_R1"
+    ],
+    "fixed_r_instance_sha256": "106c978c111bd348bf5fd561a0e7487b775a94e2c720f7ad9ddf593c4526d09a",
+    "full_pc_admissible_actions": [
+      "observe_alias_preserving_signal",
+      "repair_R0_to_R1"
+    ],
+    "full_pc_instance_sha256": "106c978c111bd348bf5fd561a0e7487b775a94e2c720f7ad9ddf593c4526d09a",
+    "primary_same_initial_state_object": true,
+    "primary_same_instance_fingerprint": true,
+    "primary_same_instance_object": true,
+    "primary_same_policy_object": true,
+    "primary_same_transition_relation_object": true,
+    "r0_alternatives": [
+      "w_target_absent",
+      "w_target_present"
+    ],
+    "r0_closes": false,
+    "r1_alternatives": [
+      "w_target_present"
+    ],
+    "r1_closes": true
+  },
+  "phase_two": {
+    "primary_comparison": {
+      "canonical_instance": "instance_plus.json",
+      "canonical_instance_sha256": "106c978c111bd348bf5fd561a0e7487b775a94e2c720f7ad9ddf593c4526d09a",
+      "canonical_instance_unchanged": true,
+      "fixed_r": {
+        "closed": false,
+        "closing_alternative_count": null,
+        "closing_alternatives": null,
+        "closing_state": null,
+        "cost_classification": "infinity",
+        "deduplicated_successor_count": 1,
+        "evidence_acquisitions": 0,
+        "expanded_state_count": 2,
+        "explored_state_count": 2,
+        "frontier_exhausted": true,
+        "initial_admitted_action_count": 1,
+        "initial_admitted_actions": [
+          "observe_alias_preserving_signal"
+        ],
+        "initial_alternative_count": 2,
+        "initial_alternatives": [
+          "w_target_absent",
+          "w_target_present"
+        ],
+        "initial_excluded_action_count": 1,
+        "initial_excluded_actions": [
+          "repair_R0_to_R1"
+        ],
+        "instance_fingerprint": "106c978c111bd348bf5fd561a0e7487b775a94e2c720f7ad9ddf593c4526d09a",
+        "minimum_closure_cost": null,
+        "path": [],
+        "policy_class": "fixed_r",
+        "reachable_state_count": 2,
+        "reached_representations": [
+          "R0"
+        ],
+        "representation_repairs": 0,
+        "stale_queue_entry_count": 0,
+        "steps": 0
+      },
+      "full_pc": {
+        "closed": true,
+        "closing_alternative_count": 1,
+        "closing_alternatives": [
+          "w_target_present"
+        ],
+        "closing_state": {
+          "accumulated_cost": 1,
+          "admitted_evidence": [
+            "e_star"
+          ],
+          "depth": 1,
+          "history": [
+            "e_star"
+          ],
+          "rank": 1,
+          "representation": "R1"
+        },
+        "cost_classification": "finite",
+        "deduplicated_successor_count": 3,
+        "evidence_acquisitions": 0,
+        "expanded_state_count": 4,
+        "explored_state_count": 4,
+        "frontier_exhausted": true,
+        "initial_admitted_action_count": 2,
+        "initial_admitted_actions": [
+          "observe_alias_preserving_signal",
+          "repair_R0_to_R1"
+        ],
+        "initial_alternative_count": 2,
+        "initial_alternatives": [
+          "w_target_absent",
+          "w_target_present"
+        ],
+        "initial_excluded_action_count": 0,
+        "initial_excluded_actions": [],
+        "instance_fingerprint": "106c978c111bd348bf5fd561a0e7487b775a94e2c720f7ad9ddf593c4526d09a",
+        "minimum_closure_cost": 1,
+        "path": [
+          {
+            "acquired_evidence": [],
+            "action_cost": 1,
+            "action_id": "repair_R0_to_R1",
+            "action_kind": "representation",
+            "cumulative_cost": 1,
+            "destination_representation": "R1",
+            "resulting_depth": 1,
+            "resulting_rank": 1,
+            "source_representation": "R0"
+          }
+        ],
+        "policy_class": "full_pc",
+        "reachable_state_count": 4,
+        "reached_representations": [
+          "R0",
+          "R1"
+        ],
+        "representation_repairs": 1,
+        "stale_queue_entry_count": 0,
+        "steps": 1
+      },
+      "same_initial_state_object": true,
+      "same_instance_fingerprint": true,
+      "same_instance_object": true,
+      "same_policy_object": true,
+      "same_transition_relation_object": true
+    },
+    "secondary_ablation": {
+      "full_pc": {
+        "closed": false,
+        "closing_alternative_count": null,
+        "closing_alternatives": null,
+        "closing_state": null,
+        "cost_classification": "infinity",
+        "deduplicated_successor_count": 1,
+        "evidence_acquisitions": 0,
+        "expanded_state_count": 2,
+        "explored_state_count": 2,
+        "frontier_exhausted": true,
+        "initial_admitted_action_count": 1,
+        "initial_admitted_actions": [
+          "observe_alias_preserving_signal"
+        ],
+        "initial_alternative_count": 2,
+        "initial_alternatives": [
+          "w_target_absent",
+          "w_target_present"
+        ],
+        "initial_excluded_action_count": 0,
+        "initial_excluded_actions": [],
+        "instance_fingerprint": "57f868a299c9e79b90841fe814275c8e7128f10ef2d8e51de910302fdf791996",
+        "minimum_closure_cost": null,
+        "path": [],
+        "policy_class": "full_pc",
+        "reachable_state_count": 2,
+        "reached_representations": [
+          "R0"
+        ],
+        "representation_repairs": 0,
+        "stale_queue_entry_count": 0,
+        "steps": 0
+      },
+      "instance": "instance_minus.json",
+      "instance_sha256": "57f868a299c9e79b90841fe814275c8e7128f10ef2d8e51de910302fdf791996",
+      "role": "transition_deletion_corroboration_only",
+      "structural_diff": [
+        "representation_actions[0].enabled"
+      ]
+    },
+    "theorem_assertions": {
+      "ablation_evidence_operation_exhaustively_traversed": true,
+      "ablation_is_secondary_only": true,
+      "closure_after_R0_to_R1": true,
+      "fixed_r_evidence_operation_exhaustively_traversed": true,
+      "fixed_r_frontier_exhausted": true,
+      "kappa_pi_I_equals_1": true,
+      "kappa_pi_fix_r_I_is_infinity": true,
+      "optimal_path_environmental_evidence_acquisitions": 0,
+      "optimal_path_representation_repairs": 1,
+      "representation_repair_preserved_nonrepresentation_state": true,
+      "same_canonical_instance_for_primary_runs": true
+    }
+  },
+  "reproduction_command": "python checker.py",
+  "schema_version": 1
+}
